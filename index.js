@@ -10,8 +10,8 @@ const GAME_SPEED_START = 1; // 1.0
 const GAME_SPEED_INCREMENT = 0.00001;
 
 const GAME_WIDTH = 800;
-const GAME_HEIGHT = 200;
-const PLAYER_WIDTH = 88 / 1.5; //58
+const GAME_HEIGHT = 220;
+const PLAYER_WIDTH = 176 / 1.5; //58
 const PLAYER_HEIGHT = 94 / 1.5; //62
 const MAX_JUMP_HEIGHT = GAME_HEIGHT;
 const MIN_JUMP_HEIGHT = 150;
@@ -23,6 +23,7 @@ const CACTI_CONFIG = [
   { width: 48 / 1.5, height: 100 / 1.5, image: "images/cactus_1.png" },
   { width: 98 / 1.5, height: 100 / 1.5, image: "images/cactus_2.png" },
   { width: 68 / 1.5, height: 70 / 1.5, image: "images/cactus_3.png" },
+
 ];
 
 //Game Objects
@@ -120,11 +121,11 @@ function getScaleRatio() {
 
 function showGameOver() {
   const fontSize = 70 * scaleRatio;
-  ctx.font = `${fontSize}px Verdana`;
-  ctx.fillStyle = "grey";
-  const x = canvas.width / 4.5;
+  ctx.font = `${fontSize}px Palatino Linotype`;
+  ctx.fillStyle = "#ff5733";
+  const x = canvas.width / 3;
   const y = canvas.height / 2;
-  ctx.fillText("GAME OVER", x, y);
+  ctx.fillText("Perdiste!", x, y);
 }
 
 function setupGameReset() {
@@ -149,12 +150,12 @@ function reset() {
 }
 
 function showStartGameText() {
-  const fontSize = 40 * scaleRatio;
-  ctx.font = `${fontSize}px Verdana`;
-  ctx.fillStyle = "grey";
-  const x = canvas.width / 14;
+  const fontSize = 50 * scaleRatio;
+  ctx.font = `${fontSize}px Palatino Linotype`;
+  ctx.fillStyle = "#ff5733";
+  const x = canvas.width / 12;
   const y = canvas.height / 2;
-  ctx.fillText("Tap Screen or Press Space To Start", x, y);
+  ctx.fillText("Toca La Pantalla Para Empezar", x, y);
 }
 
 function updateGameSpeed(frameTimeDelta) {

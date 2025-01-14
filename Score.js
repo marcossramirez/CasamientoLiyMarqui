@@ -28,8 +28,8 @@ export default class Score {
     const y = 20 * this.scaleRatio;
 
     const fontSize = 20 * this.scaleRatio;
-    this.ctx.font = `${fontSize}px serif`;
-    this.ctx.fillStyle = "#525250";
+    this.ctx.font = `${fontSize}px Palatino Linotype`;
+    this.ctx.fillStyle = "#ff5733";
     const scoreX = this.canvas.width - 75 * this.scaleRatio;
     const highScoreX = scoreX - 125 * this.scaleRatio;
 
@@ -37,6 +37,6 @@ export default class Score {
     const highScorePadded = highScore.toString().padStart(6, 0);
 
     this.ctx.fillText(scorePadded, scoreX, y);
-    this.ctx.fillText(`HI ${highScorePadded}`, highScoreX, y);
+    this.ctx.fillText(`MAX ${highScorePadded}`, highScoreX, y);
   }
 }
