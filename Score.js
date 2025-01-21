@@ -25,11 +25,11 @@ export default class Score {
 
   draw() {
     const highScore = Number(localStorage.getItem(this.HIGH_SCORE_KEY));
-    const y = 15 * this.scaleRatio;
+    const y = 30 * this.scaleRatio;
 
-    const fontSize = 20 * this.scaleRatio;
+    const fontSize = 17 * this.scaleRatio;
     this.ctx.font = `${fontSize}px Palatino Linotype`;
-    this.ctx.fillStyle = "#ff5733";
+    this.ctx.fillStyle = "#1c1c1c";
     const scoreX = this.canvas.width - 75 * this.scaleRatio;
     const highScoreX = scoreX - 125 * this.scaleRatio;
 

@@ -19,7 +19,7 @@ export default class Player {
     this.scaleRatio = scaleRatio;
 
     this.x = 10 * scaleRatio;
-    this.y = this.canvas.height - this.height - 10 * scaleRatio;
+    this.y = this.canvas.height - this.height - 15 * scaleRatio;
     this.yStandingPosition = this.y;
 
     this.standingStillImage = new Image();

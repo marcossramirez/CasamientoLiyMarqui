@@ -8,15 +8,19 @@
     <style>
       * {
         padding: 0px;
-        margin: 0px;
+        margin: 0.1vh;
       }
       body {
+
+        padding-top: 6vh;
+        overflow: hidden;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
         height: 100vh;
-        
+        background-color: #5dc0e4;
+        background-image: "images/backgroundbodyfill.png";
         user-select: none;
         touch-action: none;
         -webkit-touch-callout: none;
@@ -31,20 +35,23 @@
 
       .score{
 
-        margin-bottom: 20px;
+        margin-bottom: 10px;
 
       }
       
       canvas {
-        
+
+        background-color: lightblue;
         
       }
-      h1 {
 
-        margin-top: -150px;
-        margin-bottom: 20px;
-        font-weight: normal;
-        font-size: 4.5em;
+      h1 {
+        display: flex;
+        height: 10vh;
+        margin-top: 2vh;
+        margin-bottom: 16vh;
+        font-weight: bold;
+        font-size: 2.5em;
         font-family: Palatino Linotype;
         color: #ff5733;
       }
@@ -52,6 +59,7 @@
       a {
         color: rgb(161, 157, 157);
       }
+      
       .links {
         margin-bottom: 20px;
         font-weight: normal;
